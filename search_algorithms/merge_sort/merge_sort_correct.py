@@ -46,3 +46,16 @@ def merge(left, right):
     else:
       l.append(right[j])
       j+=1
+
+  while i < len(left):
+    l.append(left[i])
+    i+=1
+
+  while j < len(right):
+    l.append(right[j])
+    j+=1
+  return l
+
+
+l = merge_sort([1, 5, 7,2,9])
+print(l)
